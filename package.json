@@ -1,0 +1,51 @@
+{
+  "name": "owl-tracker",
+  "version": "1.0.0",
+  "description": "owl-tracker is an open source monitoring library focusing on performance, errors, and user behavior.",
+  "main": "./lib/src/index.js",
+  "browser": "./dist/index.min.js",
+  "scripts": {
+    "build:umd": "webpack",
+    "build:esm": "tsc",
+    "lint": "eslint --ext .ts,.js ./src",
+    "lint:fix": "eslint --fix --ext .ts,.js ./src",
+    "build": "npm run lint:fix && npm-run-all --parallel build:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "monitor",
+    "performace",
+    "errors",
+    "use",
+    "behavior"
+  ],
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nocturnal-owl/owl-tracker.git"
+  },
+  "author": "JawnHa <smbera@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ua-parser-js": "^0.7.36",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "error-stack-parser": "^2.1.4",
+    "ua-parser-js": "^1.0.33",
+    "web-vitals": "^3.1.1"
+  },
+  "packageManager": "pnpm@7.4.0"
+}
