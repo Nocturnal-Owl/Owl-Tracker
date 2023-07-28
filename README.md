@@ -40,6 +40,8 @@ To obtain user behavior and track product utilization at the user end and, based
 - ⬜️ Handling of unavailability of backend services
 - ⬜️ Handling of repeat error records
 - ⬜️ Report mode downgrade handling
+- ⬜️ Multi-end compatibility
+- ⬜️ Monitoring network request links
 
 ## README
 - en [English](README.md)
